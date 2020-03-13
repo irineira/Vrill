@@ -1,0 +1,23 @@
+.sect5{
+	padding: rem(100) 0;
+	background-image: url(../images/bg.svg);
+	background-size: cover;
+
+	&__content{
+		background-color: $white;
+		padding: rem(100) rem(200);
+		border-radius: rem(100);
+	}
+
+	&__title{
+		margin-bottom: rem(25);
+	}
+
+	&__text{
+		p{
+			font-size: rem(20);
+			margin-bottom: rem(30);
+			line-height: 1.5;
+		}
+	}
+}

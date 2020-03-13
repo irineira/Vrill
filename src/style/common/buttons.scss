@@ -1,0 +1,51 @@
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: rem(128);
+    height: rem(50);
+    border: none;
+    background-image: url(../images/bg_btn_1.svg);
+    background-size: cover;
+    background-color: $white;
+    font-family: Gilroy;
+    font-size: rem(20);
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: italic;
+    color: $white;
+    outline: none;
+    &:hover {
+		animation: example .6s;
+	}
+
+	&:active {
+		transform: scale(0.99);
+		transition: 0s;
+	}
+
+    @keyframes example {
+        0%   {transform: rotate(0deg);}
+        25%  {transform: rotate(5deg);}
+        50%  {transform: rotate(-3deg);}
+        100% {transform: rotate(0deg);}
+    }
+    
+    @media screen and (max-width: 769px) {
+        .button {
+            width: 88px;
+            height: 42px;
+            font-size: 18px;
+        }
+    }
+}
+
+
+@media screen and (max-width:500px){
+    .button{
+        width: 93px;
+        height: 36px;
+        font-size: 16px;
+        line-height: 1;
+    }
+}

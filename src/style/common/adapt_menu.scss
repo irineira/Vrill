@@ -1,0 +1,112 @@
+    // adapt menu
+.adaptmenu{
+    transform: translateY(-100%);
+    transition: 1s;
+    width: 100vw;
+    background-color: $brand_color;
+    height: rem(80);
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    transition: 0.6s;
+
+    &__content{
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 rem(279) 0 rem(279);
+    }
+
+    &__item{
+        height: 100%;
+        display: flex;
+        align-self: center;
+
+        a{
+            height: 100%;
+            display: flex;
+            align-items: center;
+            color: $white;
+            text-transform: uppercase;
+            position: relative;
+            font-size: rem(20);
+            font-family: Gilroy;
+            font-weight: 900;
+            font-stretch: normal;
+            font-style: italic;
+            padding: 0 6px;
+            &:before{
+                position: absolute;
+                content: '';
+                top: 0;
+                left: 50%;
+                display: block;
+                width: 0px;
+                height: rem(5);
+                background: #5cce59;
+                transform: translateX(-50%);
+                transition: 0.3s;
+            }
+            &:hover{
+                color: #5cce59;
+                transition: 0s;
+            }
+            &:hover:before{
+                width: 100%;
+            }
+        }
+    }  
+}
+
+.adaptmenu_active{
+    transform: translateY(-100%);
+    transition: 0.6s;
+}
+
+.subheader_active{
+    transform: translateY(100%);
+    transition: .6s;
+}
+
+.subheader_fix{
+    position: fixed;
+    left: 0;
+    right: 0;
+    box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.45); 
+}
+
+
+@media screen and (max-width:769px){
+    .adaptmenu{
+        overflow: scroll;
+
+        &__content{
+            padding: 0 15px;
+            width: 115%;
+        }
+
+        &__item{
+            a{
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:500px){
+    .adaptmenu{
+
+        &__content{
+            padding: 0 20px;
+            width: 130%;
+        }
+
+        &__item{
+            a{
+                font-size: 16px;
+            }
+        }
+    }
+}

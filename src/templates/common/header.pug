@@ -1,0 +1,43 @@
+header.header
+    .wrapper
+        .header__content
+            .header__left
+                .header__logo
+                    a(href="/")
+                        img(src="./images/logo_1.svg", alt="") 
+            .header__right
+                .header__select 
+                    .select
+                        input#item00(name='sortType', type='radio', value='item00', checked='checked')
+                        label#item_1(for='item00' ) Netherlands   
+                        input#item01(name='sortType', type='radio', value='item01')
+                        label#item_2(for='item01' ) Netherlands 2
+                        input#item02(name='sortType', type='radio', value='item02')
+                        label#item_3(for='item02' ) Netherlands 3
+                .header__blockbutton
+                    button.button 
+                        span buy now
+                .header__burger
+                    .burger
+                        img(src="./images/burger.svg", alt="")
+
+    .adaptmenu
+        .adaptmenu__content
+            .adaptmenu__item
+                a(href="#mission") 
+                    span Mission  
+            .adaptmenu__item
+                a(href="#video") 
+                    span Video 
+            .adaptmenu__item
+                a(href="#story") 
+                    span Our story 
+            .adaptmenu__item
+                a(href="#about") 
+                    span About  
+            .adaptmenu__item
+                a(href="#faq") 
+                    span FAQ  
+            .adaptmenu__item
+                a(href="#contact") 
+                    span Contact           

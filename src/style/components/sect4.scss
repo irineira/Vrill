@@ -1,0 +1,19 @@
+.sect4{
+	padding: rem(100) 0;
+
+	.wrapper{
+		width: rem(780);
+	}
+
+	&__title{
+		margin-bottom: rem(25);
+	}
+
+	&__text{
+		p{
+			font-size: rem(20);
+			margin-bottom: rem(30);
+			line-height: 1.5;
+		}
+	}
+}

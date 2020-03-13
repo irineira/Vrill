@@ -1,0 +1,136 @@
+extends ../template
+
+block varibles
+    - var title = "Vrill"
+
+block content
+   
+    .content
+        include ../common/header.pug
+
+        section.sect1
+            .wrapper
+                .sect1__content
+                    .sect1__logo
+                        img(src="./images/logo_2.svg", alt="")
+                    .sect1__title
+                        h1 The next generation of powerfull Omega-3
+                    .sect1__text
+                        p We believe in making things better for human and planet. Due to extensive research we have developed a breakthrough omega-3 DHA+EPA from algae oil with super ingredients
+             
+        section.sect2#mission
+            .wrapper
+                .sect2__content
+                    .sect2__title
+                        h2.title Intro paragraph
+                    .sect2__text
+                        p Sed posuere consectetur est at lobortis. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras mattis consectetur purus sit amet fermentum.
+                    .sect2__block
+                        .sect2__item
+                            .sect2__itemTitle
+                                h3 Omega-3 fatty acids EPA & DHA
+                            .sect2__itemIext
+                                p These essential fatty acids are one of the most researched nutrients, with a wide range of health benefits for your heart, eyes, liver and brain.
+
+                        .sect2__item
+                            .sect2__itemTitle
+                                h3 Phospholipids
+                            .sect2__itemIext
+                                p Phospholipids help omega-3s integrate into the cell membranes and may be a better delivery form to the body’s organs than other marine oils.
+
+                        .sect2__item
+                            .sect2__itemTitle
+                                h3 Choline
+                            .sect2__itemIext
+                                p Choline is an essential nutrient vital for many body functions such as nerve signaling, liver and muscle functioning. Our body can't make enough, therefore we must obtain it from our diet.
+
+                        .sect2__item
+                            .sect2__itemTitle
+                                h3 Astaxanthin
+                            .sect2__itemIext
+                                p This natural antioxidant gives krill oil its beautiful red color. It also protects the oil from oxidation, eliminating the need to add preservatives.
+
+
+        section.sect3#video
+            .wrapper
+                .sect3__content
+                    .sect3__videoBlock
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/QpHg-WJ-mek" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        section.sect4#story
+            .wrapper
+                .sect4__content
+                    .sect4__title
+                        h2.title The Vrill Omega story
+                    .sect4__text
+                        p Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+                        p Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Sed posuere consectetur est at lobortis. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        p Sed posuere consectetur est at lobortis. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+        section.sect5#about
+            .wrapper
+                .sect5__content
+                    .sect5__title
+                        h2.title About us
+                    .sect5__text
+                        p Donec id elit non mi porta gravida at eget metus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam id dolor id nibh ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis euismod. Nulla vitae elit libero, a pharetra augue.
+                        p Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec ullamcorper nulla non metus auctor fringilla. Fusce dapibus, tellus ac cursus.
+
+        section.sect6#faq
+            .wrapper
+                .sect6__content
+                    .sect6__title
+                        h2.title Frequently Asked Questions
+                    .sect6__faqWrapper
+                        .sect6__faqItem 
+                            .questionItem 
+                                .questionItem__top
+                                    .questionItem__title
+                                        h3 Why omega-3 from algae?
+                                    .questionItem__icon
+                                        img(src="./images/chevron.svg", alt="")
+                                .questionItem__bottom.hidden
+                                    .questionItem__text
+                                        p  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh. Aenean eu leo quam. Pellentesque ornare sem.
+                            .questionItem 
+                                .questionItem__top
+                                    .questionItem__title
+                                        h3 What is omega-3 good for?
+                                    .questionItem__icon
+                                        img(src="./images/chevron.svg", alt="")
+                                .questionItem__bottom.hidden
+                                    .questionItem__text
+                                        p  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh. Aenean eu leo quam. Pellentesque ornare sem.
+                            .questionItem 
+                                .questionItem__top
+                                    .questionItem__title
+                                        h3 Maecenas sed diam eget risus varius blandit?
+                                    .questionItem__icon
+                                        img(src="./images/chevron.svg", alt="")
+                                .questionItem__bottom.hidden
+                                    .questionItem__text
+                                        p  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh. Aenean eu leo quam. Pellentesque ornare sem.   
+
+        section.sect7#contact
+            .wrapper
+                .sect7__content
+                    .sect7__title
+                        h2.title Contact
+                    .sect7__desc
+                        p Before you contact us, please have a quick look at our Frequently Asked Questions above. If that didn’t answer your question, feel free to send us an e-mail at 
+                            a(href="mailto:info@dailys-omega3.com") info@dailys-omega3.com 
+                            |, call to 
+                            a(href="tel:0208204529") 020 - 820 45 29 
+                            | or fill out the form below.
+                    
+                    .sect7__formblock
+                        form.form
+                            .form__inputsblock
+                                input(type="text" placeholder="Full name")
+                                input(type="email" placeholder="E-mail address")
+                            textarea.textarea(placeholder="Message")
+                            .form__buttonblock
+                                button.button(type="submit")
+                                    span Submit            
+
+        include ../common/footer.pug

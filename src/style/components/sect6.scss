@@ -1,0 +1,91 @@
+.sect6{
+	padding: rem(100) 0;
+
+	.wrapper{
+		width: rem(780);
+	}
+
+	&__title{
+		padding-bottom: rem(25);
+		border-bottom: 1px solid  #e5e7ed;
+	}
+}
+
+.questionItem{
+	padding: rem(30) 0 rem(30) 0;
+	border-bottom: 1px solid  #e5e7ed;
+
+	&__top{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__title{
+		h3{
+			font-family: Gilroy;
+			font-size: rem(26);
+			font-weight: 900;
+			font-style: italic;
+			font-stretch: normal;
+			line-height: 1.085;
+			color: $brand_color;
+		}
+	}
+
+	&__icon{
+		display: flex;
+		align-items: center;
+		img{
+			width: rem(22);
+			height: rem(22);
+			transition: 0s;
+			transform: rotate(90deg);
+			&.trans_rot{
+				transform: rotate(0deg);
+			}
+		}
+	}
+
+	&__bottom{
+		padding: rem(10) 0 0 0;
+	}
+
+	&__text{
+		p{
+			font-size: rem(16);
+			font-weight: normal;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: 1.63;
+			letter-spacing: normal;
+		}
+	}
+
+	.hidden{
+		display: none;
+	}
+}
+
+
+@media screen and (max-width:769px){
+    .sect6{
+		// padding-top: 60px;
+
+		// &__titleblock{
+		// 	padding-bottom: 15px;
+		// }
+        
+	}
+	
+	.questionItem{
+		// padding: 20px 0;
+
+		// &__bottom{
+		// 	padding: 20px 0 0 0;
+		// }
+
+		// &__title{
+		// 	padding-right: 10px;
+		// }
+	}
+}

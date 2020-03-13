@@ -1,0 +1,79 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+
+textarea {
+    resize: vertical;
+    }
+
+
+
+
+
+
+
+// my style
+
+* {
+    transition:all .1s ease-in-out
+}
+
+html{
+    font-size: 1.1111111vw;
+}
+
+@media screen and (max-width:769px){
+    html{
+        font-size: 16px;
+    }
+}
+
+.content{
+    overflow: hidden;
+}
+
+body{
+    position: relative;
+    font-family: Signika;
+    color: $maintext;
+    font-weight: 400;
+}
+
+a{
+    cursor: pointer !important;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: Gilroy; 
+    src: url("../fonts/Gilroy-BlackItalic.eot"),
+    url("../fonts/Gilroy-BlackItalic.ttf") format("truetype"),
+    url("../fonts/Gilroy-BlackItalic.woff") format("woff"), 
+    url("../fonts/Gilroy-BlackItalic.woff2") format("woff2"), 
+    url("../fonts/Gilroy-BlackItalic.otf") format("opentype"); 
+    font-style: normal; 
+    font-weight: normal; 
+}
+
+@font-face {
+    font-family: Signika; 
+    src: url("../fonts/Signika-Regular.eot"),
+    url("../fonts/Signika-Regular.ttf") format("truetype"),
+    url("../fonts/Signika-Regular.woff") format("woff"), 
+    url("../fonts/Signika-Regular.woff2") format("woff2"), 
+    url("../fonts/Signika-Regular.otf") format("opentype"); 
+    font-style: normal; 
+    font-weight: 900; 
+}

@@ -1,0 +1,109 @@
+.select {
+    background-color: transparent;
+	min-width: rem(300);
+	max-width: rem(300);
+    display: inline-block;
+    min-height: rem(40);
+    max-height: rem(40);
+    overflow: hidden;
+    cursor: pointer;
+    text-align: left;
+    white-space: nowrap;
+    position: absolute;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    z-index: 1000000;
+    line-height: normal;
+    text-align: center;
+    letter-spacing: 0.01em;
+	color: $brand_color;
+    right: rem(20);
+    top: rem(8);
+    transition: 0s !important;
+	
+    input {
+        display: none;
+	}
+	
+    label {
+        display: flex !important;
+		align-items: center;
+		justify-content: flex-end;
+        height: rem(40);
+        cursor: pointer;
+        position: relative;
+        width: 100%;
+        padding: 0 rem(24) 0 0 !important;
+        font-weight: 900;
+        font-family: Gilroy !important;
+        font-size: rem(20);
+        line-height: 1;
+        font-style: italic;
+        transition: 0s !important;
+        &:nth-child(2) {
+            margin-top: rem(43);
+        }
+	}
+	
+    &::before {
+        content: "";
+        position: absolute;
+        width: rem(20);
+        height: rem(20);
+        top: 50%;
+        transform: translateY(-50%);
+		right: 0;
+		background-image: url(../images/chevron.svg);
+        background-size: contain;
+        transition: 0s !important;
+		
+    }
+    input:checked + label {
+        display: block;
+        border-top: none;
+        position: absolute;
+        top: 0;
+        transition: 0s !important;
+        &:nth-child(2) {
+            margin-top: 0;
+            position: relative;
+            text-shadow: none;
+        }
+    }
+    
+    &.expanded {
+        max-height: 17em;
+        top: rem(8);
+        transition: 0s !important;
+        padding-bottom: rem(5);
+
+        label {
+            &:hover {
+                color: #5cce59;
+            }
+		}
+		
+        input:checked + label {
+            color: $black;
+            text-shadow: none;
+		}
+		
+        &::before {
+			display: none;
+		}
+    }
+}
+
+
+@media screen and (max-width:769px) {
+    .select{
+        right: 10px;
+        top: 5px;
+        min-width: rem(100);
+        max-width: rem(100);
+        label{
+            padding-right: 24px !important;
+        }
+    }
+}

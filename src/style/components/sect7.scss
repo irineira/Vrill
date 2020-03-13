@@ -1,0 +1,137 @@
+.sect7{
+	padding-bottom: rem(100);
+
+	.wrapper{
+		width: rem(780);
+	}
+
+	&__title{
+		margin-bottom: rem(25);
+	}
+
+	&__desc{
+		p{
+			font-size: rem(20);
+			font-weight: normal;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: 1.5;
+			letter-spacing: normal;
+			color: $black;
+			a{
+				font-weight: bold;
+  				color: $brand_color;
+			}
+		}
+	}
+
+	&__formblock{
+		padding-top: rem(30);
+	}
+}
+
+.form{
+	&__inputsblock{
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: rem(20);
+		input{
+			outline: none;
+			width: rem(340);
+			height: rem(50);
+			border: solid 1px #e5e7ed;
+			padding: 0 rem(15);
+			font-family: Signika;
+			font-size: rem(16);
+			font-weight: normal;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: 1.63;
+			letter-spacing: normal;
+			color: black;
+			@include placeholder{
+				font-family: Signika;
+				font-size: rem(16);
+				font-weight: normal;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: 1.63;
+				letter-spacing: normal;
+				color: black;
+			}
+		}
+	}
+
+	.textarea{
+		outline: none;
+		border: solid 1px #e5e7ed;
+		resize: none;
+		width: 100%;
+		height: rem(100);
+		margin-bottom: rem(20);
+		padding: rem(12) 0 0 rem(15);
+		font-family: Signika;
+		font-size: rem(16);
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 1.63;
+		letter-spacing: normal;
+		color: black;
+		@include placeholder{
+			font-family: Signika;
+			font-size: rem(16);
+			font-weight: normal;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: 1.63;
+			letter-spacing: normal;
+			color: black;
+		}
+
+	}
+
+	&__buttonblock{
+		display: flex;
+		justify-content: flex-end;
+		button{
+			width: rem(116);
+			background-image: url(../images/bg_btn_2.svg);
+		}
+	}
+}
+
+
+@media screen and (max-width:769px){
+	.form{
+
+		&__inputsblock{
+			flex-direction: column;
+			input{
+				width: 100%;
+				&:first-child{
+					margin-bottom: rem(20);
+				}
+			}
+		}
+	}
+
+	.form{
+
+		// &__inputsblock{
+		// 	flex-direction: column;
+
+		// 	input{
+		// 		width: 100%;
+		// 		&:first-child{
+		// 			margin-bottom: 20px;
+		// 		}
+		// 	}
+		// }
+
+		// .textarea{
+		// 	width: 100%;
+		// 	margin-bottom: 20px;
+		// }
+	}
+}

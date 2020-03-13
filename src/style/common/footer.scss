@@ -1,0 +1,60 @@
+.footer{
+    background-image: url(../images/bg.svg);
+    background-size: cover;
+    padding: rem(50) 0;
+
+    &__content{
+        text-align: center;
+    }
+
+    &__logo{ 
+        margin: 0 auto rem(30) auto;
+        img{
+            width: rem(133);
+            height: rem(80); 
+            fill: $white;
+        }
+    }
+
+    &__share{
+        margin-bottom: rem(25);
+    }
+
+    &__shareItem{
+        margin: rem(7.5);
+        img{
+            width: rem(30);
+            height: rem(30);
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    &__links{
+        a{
+            display: block;
+            font-size: rem(16);
+            line-height: 1.63;
+            color: $white;
+            &:hover{
+                text-decoration: underline dashed;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:500px){
+    .footer{
+        &__links{
+            a{
+                font-size: 14px;
+                line-height: 1.57;
+                &:first-child{
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }     
+}

@@ -1,0 +1,39 @@
+.sect3{
+	padding: rem(100) 0;
+	background-image: url(../images/bg.svg);
+	background-size: cover;
+
+	.wrapper{
+		width: rem(780);
+	}
+	
+	&__videoBlock{
+		iframe{
+			width: 100%;
+			height: rem(428);
+		}
+	}
+}
+
+
+@media screen and (max-width:769px){
+	
+}
+
+
+@media screen and (max-width:500px){
+	.sect3{
+		// padding: 80px 0 0 0;
+
+		// &__title{
+		// 	margin-bottom: 15px;
+		// }
+
+		// &__text{
+		// 	p{
+		// 		font-size: 16px;
+		// 		line-height: 1.75;
+		// 	}
+		// }
+	}
+}
