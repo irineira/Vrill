@@ -56,9 +56,22 @@
 
 @media screen and (max-width:500px){
     .header{
+        height: 60px;
+        padding: 10px 0;
+
+        &__logo{
+            img{
+                width: 63px;
+                height: 40px;
+            }
+        }
         
         &__select{
             display: none;
+        }
+
+        &__blockbutton{
+            margin-top: -4px;
         }
 
         &__burger{

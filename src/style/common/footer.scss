@@ -47,12 +47,18 @@
 
 @media screen and (max-width:500px){
     .footer{
+        background-image: url(../images/bg_f_m.svg);
+
+        &__share{
+            margin-bottom: 30px;
+        }
+
         &__links{
             a{
                 font-size: 14px;
                 line-height: 1.57;
                 &:first-child{
-                    margin-bottom: 10px;
+                    margin-bottom: 5px;
                 }
             }
         }

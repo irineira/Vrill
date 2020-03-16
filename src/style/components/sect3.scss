@@ -16,24 +16,15 @@
 }
 
 
-@media screen and (max-width:769px){
-	
-}
-
-
 @media screen and (max-width:500px){
 	.sect3{
-		// padding: 80px 0 0 0;
+		background-image: url(../images/bg_mob.svg), linear-gradient(285deg, #5cce59 32%, #33835c 67%);
+		padding: 30px 0;
 
-		// &__title{
-		// 	margin-bottom: 15px;
-		// }
-
-		// &__text{
-		// 	p{
-		// 		font-size: 16px;
-		// 		line-height: 1.75;
-		// 	}
-		// }
+		&__videoBlock{
+			iframe{
+				height: rem(158);
+			}
+		}	
 	}
 }

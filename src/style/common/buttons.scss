@@ -30,14 +30,6 @@
         50%  {transform: rotate(-3deg);}
         100% {transform: rotate(0deg);}
     }
-    
-    @media screen and (max-width: 769px) {
-        .button {
-            width: 88px;
-            height: 42px;
-            font-size: 18px;
-        }
-    }
 }
 
 

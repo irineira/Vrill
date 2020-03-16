@@ -17,7 +17,7 @@
 			font-stretch: normal;
 			line-height: 1.5;
 			letter-spacing: normal;
-			color: $black;
+			color: $maintext;
 			a{
 				font-weight: bold;
   				color: $brand_color;
@@ -48,7 +48,7 @@
 			font-stretch: normal;
 			line-height: 1.63;
 			letter-spacing: normal;
-			color: black;
+			color: $maintext;
 			@include placeholder{
 				font-family: Signika;
 				font-size: rem(16);
@@ -57,7 +57,7 @@
 				font-stretch: normal;
 				line-height: 1.63;
 				letter-spacing: normal;
-				color: black;
+				color: $maintext;
 			}
 		}
 	}
@@ -77,7 +77,7 @@
 		font-stretch: normal;
 		line-height: 1.63;
 		letter-spacing: normal;
-		color: black;
+		color: $maintext;
 		@include placeholder{
 			font-family: Signika;
 			font-size: rem(16);
@@ -86,9 +86,8 @@
 			font-stretch: normal;
 			line-height: 1.63;
 			letter-spacing: normal;
-			color: black;
+			color: $maintext;
 		}
-
 	}
 
 	&__buttonblock{
@@ -115,23 +114,20 @@
 			}
 		}
 	}
+}
 
+
+@media screen and (max-width:500px){
+	.sect7{
+		padding-bottom: 50px;
+	}
+	
 	.form{
-
-		// &__inputsblock{
-		// 	flex-direction: column;
-
-		// 	input{
-		// 		width: 100%;
-		// 		&:first-child{
-		// 			margin-bottom: 20px;
-		// 		}
-		// 	}
-		// }
-
-		// .textarea{
-		// 	width: 100%;
-		// 	margin-bottom: 20px;
-		// }
+		&__buttonblock{
+			.button{
+				width: 83px;
+				height: 36px;
+			}
+		}
 	}
 }

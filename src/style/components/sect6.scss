@@ -67,25 +67,31 @@
 }
 
 
-@media screen and (max-width:769px){
+@media screen and (max-width:500px){
     .sect6{
-		// padding-top: 60px;
+		padding: 50px 0;
 
-		// &__titleblock{
-		// 	padding-bottom: 15px;
-		// }
-        
+		&__title{
+			padding-bottom: 15px;
+		}
 	}
 	
 	.questionItem{
-		// padding: 20px 0;
+		padding: 20px 0;
+		
+		&__title{
+			h3{
+				font-size: 20px;
+				line-height: 1.1;
+  				letter-spacing: -0.01px;
+			}
+		}
 
-		// &__bottom{
-		// 	padding: 20px 0 0 0;
-		// }
-
-		// &__title{
-		// 	padding-right: 10px;
-		// }
+		&__text{
+			p{
+				font-size: 16px;
+				line-height: 1.63;
+			}
+		}
 	}
 }
