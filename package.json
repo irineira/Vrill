@@ -32,6 +32,6 @@
         "masonry-layout": "^4.2.2",
         "pug": "^2.0.3",
         "swiper": "^4.3.5",
-        "webpack-stream": "^4.0.3"
+        "webpack-stream": "^7.0.0"
     }
 }
